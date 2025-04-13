@@ -15,7 +15,7 @@ class Karyawan
         this.gajiPokok = gajiPokok;
     }
 
-    public string NamaKaryawan
+    public string NamaKaryawan 
     {
         get { return namaKaryawan; }
         set { namaKaryawan = value; }
