@@ -52,21 +52,21 @@ class Karyawan
 // Karyawan Tetap
 class KaryawanTetap : Karyawan
 {
-    private const double BonusTetap = 500000;
+    private double BonusTetap = 500000;
 
     public KaryawanTetap(string namaKaryawan, string idKaryawan, double gajiPokok)
         : base(namaKaryawan, idKaryawan, gajiPokok) { }
 
     public override double HitungGaji()
     {
-        return GajiPokok + BonusTetap;
+        return GajiPokok + BonusTetap; 
     }
 }
 
 // Karyawan Kontrak
 class KaryawanKontrak : Karyawan
 {
-    private const double PotonganKontrak = 200000;
+    private double PotonganKontrak = 200000;
 
     public KaryawanKontrak(string namaKaryawan, string idKaryawan, double gajiPokok)
         : base(namaKaryawan, idKaryawan, gajiPokok) { }
