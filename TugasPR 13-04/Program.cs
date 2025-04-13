@@ -92,14 +92,18 @@ class Program
         string pilihan;
         while (true)
         {
+            Console.WriteLine("===========================================");
+            Console.WriteLine("         SISTEM MANAJEMEN KARYAWAN ");
+            Console.WriteLine("===========================================");
             Console.WriteLine("Pilih jenis karyawan : \n- Tetap \n- Kontrak \n- Magang");
+            Console.WriteLine("===========================================");
             Console.Write("Masukkan Pilihan (Tetap/Kontrak/Magang) : ");
             pilihan = Console.ReadLine().Trim().ToLower();
 
             if (pilihan == "tetap" || pilihan == "kontrak" || pilihan == "magang")
                 break;
             else
-                Console.WriteLine("Pilihan tidak valid. Silakan masukkan 'Tetap', 'Kontrak', atau 'Magang'.\n");
+                Console.WriteLine("Pilihan tidak valid. Silakan masukkan pilihan 'Tetap', 'Kontrak', atau 'Magang'.\n");
         }
 
         string namaKaryawan;
@@ -149,8 +153,7 @@ class Program
                 karyawan = new KaryawanMagang(namaKaryawan, idKaryawan, gajiPokok);
                 break;
             default:
-                // tidak akan terjadi karena sudah divalidasi
-                Console.WriteLine("Terjadi kesalahan.");
+                Console.WriteLine("Tidak ada pilihan");
                 return;
         }
 
