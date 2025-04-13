@@ -84,7 +84,6 @@ class KaryawanMagang : Karyawan
         : base(namaKaryawan, idKaryawan, gajiPokok) { }
 }
 
-// Program Utama
 class Program
 {
     static void Main()
